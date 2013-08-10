@@ -161,6 +161,8 @@ function! CssPretty(...)
 		call append(line, lines[x])
 		let line = line + 1
 	endfor
+	
+	silent :%s/\*\//\*\/\r/g
 
 endfunction
 
