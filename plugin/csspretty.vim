@@ -169,3 +169,5 @@ endfunction
 if !exists("g:CssPrettyLeftBraceAtNewLine")
     let g:CssPrettyLeftBraceAtNewLine=0
 endif
+
+command! csspretty call CssPretty()
